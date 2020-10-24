@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="@+id/cv"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/NewsImage"
+                android:layout_width="120dp"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginLeft="128dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+android:layout_margin="3dp"
+                android:id="@+id/UserImag"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                >
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <TextView
+                android:text="User Name"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/TvUserName"
+                android:layout_toRightOf="@id/UserImag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+
+                android:text="UploadDate"
+                android:id="@+id/TvUpLoadDate"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/TvUserName"
+                android:layout_toRightOf="@id/UserImag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+        </RelativeLayout>
+        <TextView
+            android:text="Title"
+            android:id="@+id/TvNewsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"></TextView>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Description"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/TvNewsDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorBlue"
+        android:id="@+id/TvReadMore"
+        android:text="ReadMore...."
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+</RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

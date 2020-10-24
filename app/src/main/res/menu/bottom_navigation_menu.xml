@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/NewsPage"
+        android:enabled="true"
+        android:icon="@drawable/news"
+        android:title="News"/>
+    <item
+        android:id="@+id/MapsPage"
+        android:enabled="true"
+        android:icon="@drawable/map"
+        android:title="Maps"/>
+
+    </menu>
